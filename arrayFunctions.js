@@ -10,6 +10,11 @@
  */
 function isArrayLengthOdd(numbers) {
   // Your code here
+  
+  if(numbers.length%2!=0)
+  return true
+  else
+  return false
 }
 
 /**
@@ -24,6 +29,10 @@ function isArrayLengthOdd(numbers) {
  */
 function isArrayLengthEven(numbers) {
   // Your code here
+  if(numbers.length%2==0)
+  return true
+  else
+  return false
 }
 
 /**
@@ -36,6 +45,9 @@ function isArrayLengthEven(numbers) {
  */
 function addLailaToArray(instructors) {
   // Your code here
+ instructors.push("Laila");
+let array = instructors;
+  return array;
 }
 
 /**
@@ -48,6 +60,8 @@ function addLailaToArray(instructors) {
  */
 function eliminateTeam(teams) {
   // Your code here
+  return teams.pop();
+
 }
 
 /**
@@ -55,13 +69,18 @@ function eliminateTeam(teams) {
  * - receives array `fruits`
  * - returns a new array that's the second half of the original array if it has an even number of elements
  * - returns an empty array if it has an odd number of elements
- *
+ *e
  * e.g.
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"]) -> ["banana", "kiwi"]
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
 function secondHalfOfArrayIfItIsEven(fruits) {
   // Your code here
+
+  if(fruits.length%2==0)
+  return fruits.slice(fruits.length/2,fruits.length)
+  else
+  return fruits = []
 }
 
 /**
@@ -79,6 +98,10 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use string method .slice()
  */
 function youGottaCalmDown(shout) {
+  
+  
+  return shout.slice(0,(shout.indexOf("!")+1));
+
   // Your code here
 }
 
