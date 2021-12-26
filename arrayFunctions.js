@@ -74,7 +74,7 @@ function eliminateTeam(teams) {
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi"]) -> ["banana", "kiwi"]
  * secondHalfOfArrayIfItIsEven(["apple", "orange", "banana", "kiwi", "blueberry"]) -> []
  */
-function secondHalfOfArrayIfItIsEven(fruits) {
+ function secondHalfOfArrayIfItIsEven(fruits) {
   // Your code here
 
   if(fruits.length%2==0)
@@ -99,8 +99,10 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  */
 function youGottaCalmDown(shout) {
   
-  
+  if(shout.indexOf("!"))
   return shout.slice(0,(shout.indexOf("!")+1));
+  else
+  return shout
 
   // Your code here
 }
